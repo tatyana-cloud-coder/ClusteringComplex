@@ -1,0 +1,12 @@
+C:\Users\Tatya\OneDrive\Рабочий стол\параллелки\ClusteringComplex\ClusteringComplex.Entities\bin\Debug\net5.0\ClusteringComplex.Entities.deps.json
+C:\Users\Tatya\OneDrive\Рабочий стол\параллелки\ClusteringComplex\ClusteringComplex.Entities\bin\Debug\net5.0\ClusteringComplex.Entities.dll
+C:\Users\Tatya\OneDrive\Рабочий стол\параллелки\ClusteringComplex\ClusteringComplex.Entities\bin\Debug\net5.0\ref\ClusteringComplex.Entities.dll
+C:\Users\Tatya\OneDrive\Рабочий стол\параллелки\ClusteringComplex\ClusteringComplex.Entities\bin\Debug\net5.0\ClusteringComplex.Entities.pdb
+C:\Users\Tatya\OneDrive\Рабочий стол\параллелки\ClusteringComplex\ClusteringComplex.Entities\obj\Debug\net5.0\ClusteringComplex.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tatya\OneDrive\Рабочий стол\параллелки\ClusteringComplex\ClusteringComplex.Entities\obj\Debug\net5.0\ClusteringComplex.Entities.AssemblyInfoInputs.cache
+C:\Users\Tatya\OneDrive\Рабочий стол\параллелки\ClusteringComplex\ClusteringComplex.Entities\obj\Debug\net5.0\ClusteringComplex.Entities.AssemblyInfo.cs
+C:\Users\Tatya\OneDrive\Рабочий стол\параллелки\ClusteringComplex\ClusteringComplex.Entities\obj\Debug\net5.0\ClusteringComplex.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Tatya\OneDrive\Рабочий стол\параллелки\ClusteringComplex\ClusteringComplex.Entities\obj\Debug\net5.0\ClusteringComplex.Entities.dll
+C:\Users\Tatya\OneDrive\Рабочий стол\параллелки\ClusteringComplex\ClusteringComplex.Entities\obj\Debug\net5.0\ref\ClusteringComplex.Entities.dll
+C:\Users\Tatya\OneDrive\Рабочий стол\параллелки\ClusteringComplex\ClusteringComplex.Entities\obj\Debug\net5.0\ClusteringComplex.Entities.pdb
+C:\Users\Tatya\OneDrive\Рабочий стол\параллелки\ClusteringComplex\ClusteringComplex.Entities\obj\Debug\net5.0\ClusteringComplex.Entities.csproj.AssemblyReference.cache

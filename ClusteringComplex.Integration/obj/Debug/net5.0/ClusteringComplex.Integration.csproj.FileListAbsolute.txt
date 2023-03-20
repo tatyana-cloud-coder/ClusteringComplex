@@ -1,0 +1,12 @@
+C:\Users\Tatya\OneDrive\Рабочий стол\параллелки\ClusteringComplex\ClusteringComplex.Integration\bin\Debug\net5.0\ClusteringComplex.Integration.deps.json
+C:\Users\Tatya\OneDrive\Рабочий стол\параллелки\ClusteringComplex\ClusteringComplex.Integration\bin\Debug\net5.0\ClusteringComplex.Integration.dll
+C:\Users\Tatya\OneDrive\Рабочий стол\параллелки\ClusteringComplex\ClusteringComplex.Integration\bin\Debug\net5.0\ref\ClusteringComplex.Integration.dll
+C:\Users\Tatya\OneDrive\Рабочий стол\параллелки\ClusteringComplex\ClusteringComplex.Integration\bin\Debug\net5.0\ClusteringComplex.Integration.pdb
+C:\Users\Tatya\OneDrive\Рабочий стол\параллелки\ClusteringComplex\ClusteringComplex.Integration\obj\Debug\net5.0\ClusteringComplex.Integration.csproj.AssemblyReference.cache
+C:\Users\Tatya\OneDrive\Рабочий стол\параллелки\ClusteringComplex\ClusteringComplex.Integration\obj\Debug\net5.0\ClusteringComplex.Integration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tatya\OneDrive\Рабочий стол\параллелки\ClusteringComplex\ClusteringComplex.Integration\obj\Debug\net5.0\ClusteringComplex.Integration.AssemblyInfoInputs.cache
+C:\Users\Tatya\OneDrive\Рабочий стол\параллелки\ClusteringComplex\ClusteringComplex.Integration\obj\Debug\net5.0\ClusteringComplex.Integration.AssemblyInfo.cs
+C:\Users\Tatya\OneDrive\Рабочий стол\параллелки\ClusteringComplex\ClusteringComplex.Integration\obj\Debug\net5.0\ClusteringComplex.Integration.csproj.CoreCompileInputs.cache
+C:\Users\Tatya\OneDrive\Рабочий стол\параллелки\ClusteringComplex\ClusteringComplex.Integration\obj\Debug\net5.0\ClusteringComplex.Integration.dll
+C:\Users\Tatya\OneDrive\Рабочий стол\параллелки\ClusteringComplex\ClusteringComplex.Integration\obj\Debug\net5.0\ref\ClusteringComplex.Integration.dll
+C:\Users\Tatya\OneDrive\Рабочий стол\параллелки\ClusteringComplex\ClusteringComplex.Integration\obj\Debug\net5.0\ClusteringComplex.Integration.pdb

@@ -1,0 +1,23 @@
+﻿@using ClusteringComplex.Entities
+@model ClusteringComplex.Entities.User
+
+@{
+    ViewData["Title"] = "Добавить пользователя";
+}
+
+<h3>Добавление пользователя</h3>
+<br />
+
+
+@using (Html.BeginForm())
+{
+    <p>Фамилия: @Html.EditorFor(m => m.LastName)</p>
+    <p>Имя: @Html.EditorFor(m => m.FirstName)</p>
+    <p>Отчество: @Html.EditorFor(m => m.MiddleName)</p>
+    <p>Номер телефона: @Html.EditorFor(m => m.PhoneNumber)</p>
+    <p>Email(необязательно): @Html.EditorFor(m => m.Email)</p>
+    <p>Логин: @Html.EditorFor(m => m.Login)</p>
+    <p>Пароль: @Html.EditorFor(m => m.PasswordHashCode)</p>
+    <input type="submit" value="Добавить пользователя" />
+}
+

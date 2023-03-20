@@ -1,0 +1,14 @@
+﻿@model ClusteringComplex.Entities.User
+
+<h2> Вход в систему</h2>
+<br />
+@using (Html.BeginForm())
+{
+    <p>Логин: @Html.EditorFor(m => m.Login)</p>
+    <p>Пароль: @Html.EditorFor(m => m.PasswordHashCode)</p>
+    <input type="submit" value="Войти в систему" />
+}
+
+<form method="get" action=@Url.Action("AddUser", "User")>
+    <input type="submit" value="Зарегистрироваться" />
+</form>
