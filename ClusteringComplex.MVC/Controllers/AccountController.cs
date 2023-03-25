@@ -29,27 +29,37 @@ namespace ClusteringComplex.MVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(RegisterModel model)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                User user = await _context.Users.FirstOrDefaultAsync(u => u.Login == model.Login);
-                if (user == null)
-                {
-                    // добавляем пользователя в бд
-                    user = new User { FirstName = model.FirstName, LastName = model.LastName, MiddleName = model.MiddleName,
-                        PhoneNumber = model.PhoneNumber, Email = model.Email, Login = model.Login, PasswordHashCode= Coder.HashPassword(model.Password) };
-                    Role userRole = await _context.Roles.FirstOrDefaultAsync(r => r.NameOfRole == "user");
-                    if (userRole != null)
-                        user.Role = userRole;
-              
-                    _context.Users.Add(user);
-                    await _context.SaveChangesAsync();
-
-                    return RedirectToAction("Login", "Account");
-                }
-                else
-                    ModelState.AddModelError("", "Пользователь с таким логином уже есть");
+                ModelState.AddModelError("", "Введены неккоректные данные!");
+                return View(model);
             }
-            return View(model);
+            User user = await _context.Users.FirstOrDefaultAsync(u => u.Login == model.Login);
+            if (user!=null)
+            {
+                ModelState.AddModelError("", "Пользователь с таким логином уже есть");
+                return View(model);
+            }
+            user = new User
+            {
+                FirstName = model.FirstName,
+                LastName = model.LastName,
+                MiddleName = model.MiddleName,
+                PhoneNumber = model.PhoneNumber,
+                Email = model.Email,
+                Login = model.Login,
+                PasswordHashCode = Coder.HashPassword(model.Password)
+            };
+            Role userRole = await _context.Roles.FirstOrDefaultAsync(r => r.NameOfRole == "user");
+            if (userRole == null)
+            {
+                ModelState.AddModelError("", "Такой роли нет в системе");
+                return View(model);
+            }
+            _context.Users.Add(user);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Login", "Account");
         }
         [HttpGet]
         public IActionResult Login()
@@ -60,20 +70,28 @@ namespace ClusteringComplex.MVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginModel model)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                User user = await _context.Users
+                ModelState.AddModelError("", "Введены некорректные данные!");
+                return View(model);
+            }
+            User user = await _context.Users
                     .Include(u => u.Role)
                     .FirstOrDefaultAsync(u => u.Login == model.Login);
-                if (user != null && Coder.VerifyHashedPassword(user.PasswordHashCode, model.Password))
-                {
-                    await Authenticate(user); // аутентификация
 
-                    return RedirectToAction("MainMenu", "Complex");
-                }
-                ModelState.AddModelError("", "Некорректные логин и(или) пароль");
+            if (user==null)
+            {
+                ModelState.AddModelError("", "Такого пользователя нет!");
+                return View(model);
             }
-            return View(model);
+
+            if (!Coder.VerifyHashedPassword(user.PasswordHashCode, model.Password))
+            {
+                ModelState.AddModelError("", "Хеш пароля не совпадает с введенной строкой!");
+                return View(model);
+            }
+            await Authenticate(user); // аутентификация
+            return RedirectToAction("MainMenu", "Complex");
         }
         private async Task Authenticate(User user)
         {
@@ -91,3 +109,4 @@ namespace ClusteringComplex.MVC.Controllers
         }
     }
 }
+            
