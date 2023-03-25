@@ -1,0 +1,56 @@
+syntax = "proto3";
+
+service Greeter {
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+  rpc TestMethodForTatyana (HelloRequest) returns (NewReply) {}
+
+  rpc GetFriendsUserInfo (VKCredentialsRequest) returns (FriendsInfoReply) {}
+  rpc BuiltInfoMapPartitionOnRelationGraph (VKCredentialsRequest) returns (InfomapRelationReply) {}
+  rpc BuiltInfoMapPartitionOnContentGraph (VKCredentialsRequest) returns (InfomapContentReply) {}
+}
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloReply {
+  string message = 1;
+}
+
+message NewReply {
+  string message = 1;
+  int32 i = 2;
+  string fakestr = 3;
+}
+
+message VKCredentialsRequest  {
+  string login = 1;
+  string password = 2;
+  int32 vkid = 3;
+}
+
+message FriendsInfoReply  {
+  repeated FriendInfo friends = 1;
+}
+message FriendInfo {
+	string FirstName = 1;
+	string LastName = 2;
+}
+
+
+message InfomapRelationReply  {
+  repeated int32 partition = 1;
+  double resultTime = 2;
+  double resultModularity = 3;
+}
+
+
+message InfomapContentReply  {
+  repeated int32 partition = 1;
+  double resultTime = 2;
+  double resultTimeBuilding = 3;
+  double resultModularity = 4;
+}
+
+
+

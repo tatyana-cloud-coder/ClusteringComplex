@@ -1,0 +1,26 @@
+﻿
+<h3> Выберите действие:</h3>
+<br />
+
+<form method="get" action=@Url.Action("ActionGetUserFriends", "Complex")>
+    <input type="submit" value="Просмотреть список друзей" />
+</form>
+@if (User.IsInRole("admin"))
+{
+    <form method="get" action=@Url.Action("ActionBuiltPartition", "Complex")>
+        <input type="submit" value="Построить разбиение InfoMap для графа связей " />
+    </form>
+
+    <form method="get" action=@Url.Action("ActionBuiltPartitionContent", "Complex")>
+        <input type="submit" value="Построить разбиение InfoMap для графа контента " />
+    </form>
+}
+
+
+
+<form method="get" action=@Url.Action("ActionShowParallel", "Complex")>
+    <input type="submit" value="Показать параллелизм" />
+</form>
+
+
+

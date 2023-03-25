@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ClusteringComplex.BLL.Interfaces\ClusteringComplex.BLL.Interfaces.csproj" />
-    <ProjectReference Include="..\ClusteringComplex.DAO\ClusteringComplex.DAO.csproj" />
+    <ProjectReference Include="..\ClusteringComplex.Integration\ClusteringComplex.Integration.csproj" />
   </ItemGroup>
 
 </Project>

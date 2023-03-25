@@ -1,0 +1,27 @@
+﻿@model ClusteringComplex.MVC.Models.VKPageModel
+
+<h2>Для получения разбиений на графе контента заполните параметры авторизации:</h2>
+
+<form asp-action="BuiltInfoMapPartitionContent" asp-controller="Complex" asp-anti-forgery="true">
+    <div class="validation" asp-validation-summary="ModelOnly"></div>
+    <div>
+        <div>
+            <label asp-for="Login">логин ВК</label><br />
+            <input type="text" asp-for="Login" />
+            <span asp-validation-for="Login" />
+        </div>
+        <div>
+            <label asp-for="Password">пароль ВК</label><br />
+            <input asp-for="Password" />
+            <span asp-validation-for="Password" />
+        </div>
+        <div>
+            <label asp-for="VKId">ID страницы ВК</label><br />
+            <input asp-for="VKId" />
+            <span asp-validation-for="VKId" />
+        </div>
+        <div>
+            <input type="submit" value="Выполнить" />
+        </div>
+    </div>
+</form>

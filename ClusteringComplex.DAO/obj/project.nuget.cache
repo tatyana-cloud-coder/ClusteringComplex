@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "1l9dAyRDR+jkpRF7qfvN+SNE2JNKDLAYpKgAnjTBPZ13kbUpTuayFo2h1ILi3gfReuC6OpFvrdBxU8A5cPdyeg==",
+  "dgSpecHash": "oSi9WJykoH6W4of18sMw2Lnn4IOfG2ylRu46K2+Fyy2X4XA5YyI1CuLkIkH4nHya8yJczsokb5JYSIBSQFK0fA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Tatya\\OneDrive\\Рабочий стол\\параллелки\\ClusteringComplex\\ClusteringComplex.DAO\\ClusteringComplex.DAO.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Tatya\\.nuget\\packages\\dynamiclanguageruntime\\1.3.3\\dynamiclanguageruntime.1.3.3.nupkg.sha512",
     "C:\\Users\\Tatya\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Tatya\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Tatya\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
@@ -36,6 +37,7 @@
     "C:\\Users\\Tatya\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\Tatya\\.nuget\\packages\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
     "C:\\Users\\Tatya\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
+    "C:\\Users\\Tatya\\.nuget\\packages\\system.codedom\\4.7.0\\system.codedom.4.7.0.nupkg.sha512",
     "C:\\Users\\Tatya\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\Tatya\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
     "C:\\Users\\Tatya\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",

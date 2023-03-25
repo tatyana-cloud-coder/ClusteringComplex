@@ -1,0 +1,14 @@
+distlib==0.3.6
+filelock==3.10.0
+grpcio==1.51.3
+grpcio-tools==1.51.3
+igraph==0.10.4
+numpy==1.24.2
+pip==23.0.1
+platformdirs==3.1.1
+protobuf==4.22.1
+python-igraph==0.10.4
+setuptools==63.2.0
+texttable==1.6.7
+vboxapi==1.0
+virtualenv==20.21.0

@@ -1,0 +1,53 @@
+﻿@model ClusteringComplex.Entities.InfoMapPartition
+
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>View</h1>
+
+<div class="panel-body">
+    <div class="row">
+        <div class="col-md-2">
+            @Html.LabelFor(model => model.ResultModularity, "Модулярность")
+            @Html.ValueFor(model => model.ResultModularity)
+        </div>
+        <div class="col-md-2">
+            @Html.LabelFor(model => model.ResultTime, "Время выполнения")
+            @Html.ValueFor(model => model.ResultTime)
+        </div>
+    </div>
+    <br />
+
+    @Html.Raw("Разбиения пользвателей по сообществам")
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayName("№ Сообщества")
+                </th>
+                <th>
+                    @Html.DisplayName("Персоны")
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.PartitionsUsers)
+            {
+                <tr>
+                    <td>
+                        @Html.Raw(item.Key)
+                    </td>
+                    <td>
+                        @foreach (var element in item.Value)
+                        {
+                            <p>@Html.Raw($"{element.User.LastName} {element.User.FirstName}")</p>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

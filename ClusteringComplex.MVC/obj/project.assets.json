@@ -2,6 +2,69 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "DynamicLanguageRuntime/1.3.3": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "4.7.0",
+          "System.Configuration.ConfigurationManager": "4.7.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Dynamic.dll": {},
+          "lib/netcoreapp3.1/Microsoft.Scripting.Metadata.dll": {},
+          "lib/netcoreapp3.1/Microsoft.Scripting.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Dynamic.dll": {},
+          "lib/netcoreapp3.1/Microsoft.Scripting.Metadata.dll": {},
+          "lib/netcoreapp3.1/Microsoft.Scripting.dll": {}
+        }
+      },
+      "Google.Protobuf/3.22.1": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Google.Protobuf.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Google.Protobuf.dll": {}
+        }
+      },
+      "Grpc.Core.Api/2.52.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.1/Grpc.Core.Api.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Grpc.Core.Api.dll": {}
+        }
+      },
+      "Grpc.Net.Client/2.52.0": {
+        "type": "package",
+        "dependencies": {
+          "Grpc.Net.Common": "2.52.0",
+          "Microsoft.Extensions.Logging.Abstractions": "3.0.3"
+        },
+        "compile": {
+          "lib/net5.0/Grpc.Net.Client.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Grpc.Net.Client.dll": {}
+        }
+      },
+      "Grpc.Net.Common/2.52.0": {
+        "type": "package",
+        "dependencies": {
+          "Grpc.Core.Api": "2.52.0"
+        },
+        "compile": {
+          "lib/net5.0/Grpc.Net.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Grpc.Net.Common.dll": {}
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -1185,6 +1248,15 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
+      "System.CodeDom/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.CodeDom.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CodeDom.dll": {}
+        }
+      },
       "System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1443,7 +1515,7 @@
           "System.Security.Permissions": "4.7.0"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
@@ -2367,7 +2439,7 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "ClusteringComplex.BLL.Interfaces": "1.0.0",
-          "ClusteringComplex.DAO": "1.0.0"
+          "ClusteringComplex.Integration": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ClusteringComplex.BLL.dll": {}
@@ -2394,6 +2466,7 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "ClusteringComplex.Entities": "1.0.0",
+          "DynamicLanguageRuntime": "1.3.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17"
         },
         "compile": {
@@ -2413,9 +2486,23 @@
           "bin/placeholder/ClusteringComplex.Entities.dll": {}
         }
       },
+      "ClusteringComplex.Helpers/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/ClusteringComplex.Helpers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ClusteringComplex.Helpers.dll": {}
+        }
+      },
       "ClusteringComplex.Integration/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Google.Protobuf": "3.22.1",
+          "Grpc.Net.Client": "2.52.0"
+        },
         "compile": {
           "bin/placeholder/ClusteringComplex.Integration.dll": {}
         },
@@ -2426,6 +2513,146 @@
     }
   },
   "libraries": {
+    "DynamicLanguageRuntime/1.3.3": {
+      "sha512": "FZK23PmwdfnXqX5zMf8JufymxAKXGohg2UtEfBgAlNgqXE8pq0MULF7KUUrxxI1Y6rW5OYwQwNCg1jKw2i8VVw==",
+      "type": "package",
+      "path": "dynamiclanguageruntime/1.3.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "dynamiclanguageruntime.1.3.3.nupkg.sha512",
+        "dynamiclanguageruntime.nuspec",
+        "lib/net452/Microsoft.Dynamic.dll",
+        "lib/net452/Microsoft.Dynamic.xml",
+        "lib/net452/Microsoft.Scripting.Metadata.dll",
+        "lib/net452/Microsoft.Scripting.Metadata.xml",
+        "lib/net452/Microsoft.Scripting.dll",
+        "lib/net452/Microsoft.Scripting.xml",
+        "lib/net6.0/Microsoft.Dynamic.dll",
+        "lib/net6.0/Microsoft.Dynamic.xml",
+        "lib/net6.0/Microsoft.Scripting.Metadata.dll",
+        "lib/net6.0/Microsoft.Scripting.Metadata.xml",
+        "lib/net6.0/Microsoft.Scripting.dll",
+        "lib/net6.0/Microsoft.Scripting.xml",
+        "lib/netcoreapp3.1/Microsoft.Dynamic.dll",
+        "lib/netcoreapp3.1/Microsoft.Dynamic.xml",
+        "lib/netcoreapp3.1/Microsoft.Scripting.Metadata.dll",
+        "lib/netcoreapp3.1/Microsoft.Scripting.Metadata.xml",
+        "lib/netcoreapp3.1/Microsoft.Scripting.dll",
+        "lib/netcoreapp3.1/Microsoft.Scripting.xml",
+        "lib/netstandard2.0/Microsoft.Dynamic.dll",
+        "lib/netstandard2.0/Microsoft.Dynamic.xml",
+        "lib/netstandard2.0/Microsoft.Scripting.Metadata.dll",
+        "lib/netstandard2.0/Microsoft.Scripting.Metadata.xml",
+        "lib/netstandard2.0/Microsoft.Scripting.dll",
+        "lib/netstandard2.0/Microsoft.Scripting.xml"
+      ]
+    },
+    "Google.Protobuf/3.22.1": {
+      "sha512": "Ul4gVJWLya83Z8/n3+O4QKhD8ukCCwNLDyoWpUdJSnmzxRe8o3pWiuCzzvN2z/LVH60nozlKpTzhJo3ctI+G4Q==",
+      "type": "package",
+      "path": "google.protobuf/3.22.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "google.protobuf.3.22.1.nupkg.sha512",
+        "google.protobuf.nuspec",
+        "lib/net45/Google.Protobuf.dll",
+        "lib/net45/Google.Protobuf.pdb",
+        "lib/net45/Google.Protobuf.xml",
+        "lib/net5.0/Google.Protobuf.dll",
+        "lib/net5.0/Google.Protobuf.pdb",
+        "lib/net5.0/Google.Protobuf.xml",
+        "lib/netstandard1.1/Google.Protobuf.dll",
+        "lib/netstandard1.1/Google.Protobuf.pdb",
+        "lib/netstandard1.1/Google.Protobuf.xml",
+        "lib/netstandard2.0/Google.Protobuf.dll",
+        "lib/netstandard2.0/Google.Protobuf.pdb",
+        "lib/netstandard2.0/Google.Protobuf.xml"
+      ]
+    },
+    "Grpc.Core.Api/2.52.0": {
+      "sha512": "SQiPyBczG4vKPmI6Fd+O58GcxxDSFr6nfRAJuBDUNj+PgdokhjWJvZE/La1c09AkL2FVm/jrDloG89nkzmVF7A==",
+      "type": "package",
+      "path": "grpc.core.api/2.52.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "grpc.core.api.2.52.0.nupkg.sha512",
+        "grpc.core.api.nuspec",
+        "lib/net462/Grpc.Core.Api.dll",
+        "lib/net462/Grpc.Core.Api.pdb",
+        "lib/net462/Grpc.Core.Api.xml",
+        "lib/netstandard1.5/Grpc.Core.Api.dll",
+        "lib/netstandard1.5/Grpc.Core.Api.pdb",
+        "lib/netstandard1.5/Grpc.Core.Api.xml",
+        "lib/netstandard2.0/Grpc.Core.Api.dll",
+        "lib/netstandard2.0/Grpc.Core.Api.pdb",
+        "lib/netstandard2.0/Grpc.Core.Api.xml",
+        "lib/netstandard2.1/Grpc.Core.Api.dll",
+        "lib/netstandard2.1/Grpc.Core.Api.pdb",
+        "lib/netstandard2.1/Grpc.Core.Api.xml",
+        "packageIcon.png"
+      ]
+    },
+    "Grpc.Net.Client/2.52.0": {
+      "sha512": "hWVH9g/Nnjz40ni//2S8UIOyEmhueQREoZIkD0zKHEPqLxXcNlbp4eebXIOicZtkwDSx0TFz9NpkbecEDn6rBw==",
+      "type": "package",
+      "path": "grpc.net.client/2.52.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "grpc.net.client.2.52.0.nupkg.sha512",
+        "grpc.net.client.nuspec",
+        "lib/net5.0/Grpc.Net.Client.dll",
+        "lib/net5.0/Grpc.Net.Client.pdb",
+        "lib/net5.0/Grpc.Net.Client.xml",
+        "lib/net6.0/Grpc.Net.Client.dll",
+        "lib/net6.0/Grpc.Net.Client.pdb",
+        "lib/net6.0/Grpc.Net.Client.xml",
+        "lib/net7.0/Grpc.Net.Client.dll",
+        "lib/net7.0/Grpc.Net.Client.pdb",
+        "lib/net7.0/Grpc.Net.Client.xml",
+        "lib/netstandard2.0/Grpc.Net.Client.dll",
+        "lib/netstandard2.0/Grpc.Net.Client.pdb",
+        "lib/netstandard2.0/Grpc.Net.Client.xml",
+        "lib/netstandard2.1/Grpc.Net.Client.dll",
+        "lib/netstandard2.1/Grpc.Net.Client.pdb",
+        "lib/netstandard2.1/Grpc.Net.Client.xml",
+        "packageIcon.png"
+      ]
+    },
+    "Grpc.Net.Common/2.52.0": {
+      "sha512": "di9qzpdx525IxumZdYmu6sG2y/gXJyYeZ1ruFUzB9BJ1nj4kU1/dTAioNCMt1VLRvNVDqh8S8B1oBdKhHJ4xRg==",
+      "type": "package",
+      "path": "grpc.net.common/2.52.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "grpc.net.common.2.52.0.nupkg.sha512",
+        "grpc.net.common.nuspec",
+        "lib/net5.0/Grpc.Net.Common.dll",
+        "lib/net5.0/Grpc.Net.Common.pdb",
+        "lib/net5.0/Grpc.Net.Common.xml",
+        "lib/net6.0/Grpc.Net.Common.dll",
+        "lib/net6.0/Grpc.Net.Common.pdb",
+        "lib/net6.0/Grpc.Net.Common.xml",
+        "lib/net7.0/Grpc.Net.Common.dll",
+        "lib/net7.0/Grpc.Net.Common.pdb",
+        "lib/net7.0/Grpc.Net.Common.xml",
+        "lib/netstandard2.0/Grpc.Net.Common.dll",
+        "lib/netstandard2.0/Grpc.Net.Common.pdb",
+        "lib/netstandard2.0/Grpc.Net.Common.xml",
+        "lib/netstandard2.1/Grpc.Net.Common.dll",
+        "lib/netstandard2.1/Grpc.Net.Common.pdb",
+        "lib/netstandard2.1/Grpc.Net.Common.xml",
+        "packageIcon.png"
+      ]
+    },
     "Humanizer.Core/2.8.26": {
       "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
@@ -4310,6 +4537,29 @@
         "ref/uap10.0.16299/_._",
         "system.buffers.4.5.0.nupkg.sha512",
         "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.CodeDom/4.7.0": {
+      "sha512": "Hs9pw/kmvH3lXaZ1LFKj3pLQsiGfj2xo3sxSzwiLlRL6UcMZUTeCfoJ9Udalvn3yq5dLlPEZzYegrTQ1/LhPOQ==",
+      "type": "package",
+      "path": "system.codedom/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.CodeDom.dll",
+        "lib/net461/System.CodeDom.xml",
+        "lib/netstandard2.0/System.CodeDom.dll",
+        "lib/netstandard2.0/System.CodeDom.xml",
+        "ref/net461/System.CodeDom.dll",
+        "ref/net461/System.CodeDom.xml",
+        "ref/netstandard2.0/System.CodeDom.dll",
+        "ref/netstandard2.0/System.CodeDom.xml",
+        "system.codedom.4.7.0.nupkg.sha512",
+        "system.codedom.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -7970,6 +8220,11 @@
       "path": "../ClusteringComplex.Entities/ClusteringComplex.Entities.csproj",
       "msbuildProject": "../ClusteringComplex.Entities/ClusteringComplex.Entities.csproj"
     },
+    "ClusteringComplex.Helpers/1.0.0": {
+      "type": "project",
+      "path": "../ClusteringComplex.Helpers/ClusteringComplex.Helpers.csproj",
+      "msbuildProject": "../ClusteringComplex.Helpers/ClusteringComplex.Helpers.csproj"
+    },
     "ClusteringComplex.Integration/1.0.0": {
       "type": "project",
       "path": "../ClusteringComplex.Integration/ClusteringComplex.Integration.csproj",
@@ -7979,7 +8234,9 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "ClusteringComplex.BLL >= 1.0.0",
+      "ClusteringComplex.BLL.Interfaces >= 1.0.0",
       "ClusteringComplex.DAO >= 1.0.0",
+      "ClusteringComplex.Helpers >= 1.0.0",
       "ClusteringComplex.Integration >= 1.0.0",
       "Microsoft.AspNetCore.Identity >= 2.2.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.17",
@@ -8014,11 +8271,17 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\Tatya\\OneDrive\\Рабочий стол\\параллелки\\ClusteringComplex\\ClusteringComplex.BLL.Interfaces\\ClusteringComplex.BLL.Interfaces.csproj": {
+              "projectPath": "C:\\Users\\Tatya\\OneDrive\\Рабочий стол\\параллелки\\ClusteringComplex\\ClusteringComplex.BLL.Interfaces\\ClusteringComplex.BLL.Interfaces.csproj"
+            },
             "C:\\Users\\Tatya\\OneDrive\\Рабочий стол\\параллелки\\ClusteringComplex\\ClusteringComplex.BLL\\ClusteringComplex.BLL.csproj": {
               "projectPath": "C:\\Users\\Tatya\\OneDrive\\Рабочий стол\\параллелки\\ClusteringComplex\\ClusteringComplex.BLL\\ClusteringComplex.BLL.csproj"
             },
             "C:\\Users\\Tatya\\OneDrive\\Рабочий стол\\параллелки\\ClusteringComplex\\ClusteringComplex.DAO\\ClusteringComplex.DAO.csproj": {
               "projectPath": "C:\\Users\\Tatya\\OneDrive\\Рабочий стол\\параллелки\\ClusteringComplex\\ClusteringComplex.DAO\\ClusteringComplex.DAO.csproj"
+            },
+            "C:\\Users\\Tatya\\OneDrive\\Рабочий стол\\параллелки\\ClusteringComplex\\ClusteringComplex.Helpers\\ClusteringComplex.Helpers.csproj": {
+              "projectPath": "C:\\Users\\Tatya\\OneDrive\\Рабочий стол\\параллелки\\ClusteringComplex\\ClusteringComplex.Helpers\\ClusteringComplex.Helpers.csproj"
             },
             "C:\\Users\\Tatya\\OneDrive\\Рабочий стол\\параллелки\\ClusteringComplex\\ClusteringComplex.Integration\\ClusteringComplex.Integration.csproj": {
               "projectPath": "C:\\Users\\Tatya\\OneDrive\\Рабочий стол\\параллелки\\ClusteringComplex\\ClusteringComplex.Integration\\ClusteringComplex.Integration.csproj"

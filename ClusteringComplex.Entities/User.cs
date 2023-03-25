@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNet.Identity.EntityFramework;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
@@ -35,14 +34,11 @@ namespace ClusteringComplex.Entities
         public string Login { get; set; }
 
         [Required]
-        [MaxLength(20)]
         public string PasswordHashCode { get; set; } 
 
-    public ICollection<Role> Roles { get; set; }
+        public int? RoleId { get; set;  }
 
-        public User()
-        { 
-            Roles = new List <Role> ();
-        } 
+        public Role Role { get; set; }
+
     }
 }

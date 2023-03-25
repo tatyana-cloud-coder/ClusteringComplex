@@ -1,0 +1,37 @@
+﻿@model ClusteringComplex.Entities.ParallelM
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayName("Линейное время")
+            </th>
+            <th>
+                @Html.DisplayName("Таски")
+            </th>
+            <th>
+                @Html.DisplayName("Потоки")
+            </th>
+            <th>
+                @Html.DisplayName("Библиотека")
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                @Html.DisplayFor(m => m.TimeLinaer)
+            </td>
+            <td>
+                @Html.DisplayFor(m => m.TimeParalleTasks)
+            </td>
+            <td>
+                @Html.DisplayFor(m => m.TimeParallelThreads)
+            </td>
+            <td>
+                @Html.DisplayFor(m => m.TimeLibrary)
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

@@ -1,9 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "wi67s86tp+xXSJxwy2xtu/F/cPCwhoz9YqoC0wUG+DwN0XzEa+Zq+t4Rje33iMdxbaS/f6hX0TuWL31ZvKi0PQ==",
+  "dgSpecHash": "ePpQc6kuutk+YnqhHV6pxAiX7nDZsa7wvCbFgLq0VQnmkp2iFzyqByKP01IR3LcVIFjkGlqtUiS/QHYON6nmzQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Tatya\\OneDrive\\Рабочий стол\\параллелки\\ClusteringComplex\\ClusteringComplex.MVC\\ClusteringComplex.MVC.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Tatya\\.nuget\\packages\\dynamiclanguageruntime\\1.3.3\\dynamiclanguageruntime.1.3.3.nupkg.sha512",
+    "C:\\Users\\Tatya\\.nuget\\packages\\google.protobuf\\3.22.1\\google.protobuf.3.22.1.nupkg.sha512",
+    "C:\\Users\\Tatya\\.nuget\\packages\\grpc.core.api\\2.52.0\\grpc.core.api.2.52.0.nupkg.sha512",
+    "C:\\Users\\Tatya\\.nuget\\packages\\grpc.net.client\\2.52.0\\grpc.net.client.2.52.0.nupkg.sha512",
+    "C:\\Users\\Tatya\\.nuget\\packages\\grpc.net.common\\2.52.0\\grpc.net.common.2.52.0.nupkg.sha512",
     "C:\\Users\\Tatya\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Tatya\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Tatya\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
@@ -79,6 +84,7 @@
     "C:\\Users\\Tatya\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\Tatya\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\Tatya\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
+    "C:\\Users\\Tatya\\.nuget\\packages\\system.codedom\\4.7.0\\system.codedom.4.7.0.nupkg.sha512",
     "C:\\Users\\Tatya\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\Tatya\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
     "C:\\Users\\Tatya\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",

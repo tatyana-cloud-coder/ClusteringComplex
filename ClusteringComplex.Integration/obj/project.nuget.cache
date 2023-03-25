@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "ESs8zf2AOBkUrRJEbJNDugKrag9ufG9jsh/rbbf+D5EGzZ40SuqWmqnqrLDUXpWHIxf/RbyOpzczO0SfQMkBFQ==",
+  "dgSpecHash": "yLveO5r9pq7lmR33DC9NLmhge9nyjV1QH1ZEvPr69kSDI+0tGH4yr9wGB411BtFsIOzKUvcorH+LnMt8v3JCmQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Tatya\\OneDrive\\Рабочий стол\\параллелки\\ClusteringComplex\\ClusteringComplex.Integration\\ClusteringComplex.Integration.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Tatya\\.nuget\\packages\\google.protobuf\\3.22.1\\google.protobuf.3.22.1.nupkg.sha512",
+    "C:\\Users\\Tatya\\.nuget\\packages\\grpc.core.api\\2.52.0\\grpc.core.api.2.52.0.nupkg.sha512",
+    "C:\\Users\\Tatya\\.nuget\\packages\\grpc.net.client\\2.52.0\\grpc.net.client.2.52.0.nupkg.sha512",
+    "C:\\Users\\Tatya\\.nuget\\packages\\grpc.net.common\\2.52.0\\grpc.net.common.2.52.0.nupkg.sha512",
+    "C:\\Users\\Tatya\\.nuget\\packages\\grpc.tools\\2.52.0\\grpc.tools.2.52.0.nupkg.sha512",
+    "C:\\Users\\Tatya\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.0.3\\microsoft.extensions.logging.abstractions.3.0.3.nupkg.sha512",
+    "C:\\Users\\Tatya\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
   "logs": []
 }
